@@ -1,10 +1,10 @@
 ﻿# Moondust-Websit
 <h1 align="center">Project Moondust</h1>
 <h3 align="center">เว็บไซต์สำหรับการจัดการผู้ใช้งาน</h3>
-| หัวข้อ  | เนื้้อหา | สถานะ |
-| ------------- | ------------- |------------- |
-| Content Cell  | Content Cell  |Content Cell  |
-| Content Cell  | Content Cell  |Content Cell  |
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
