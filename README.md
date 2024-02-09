@@ -15,8 +15,7 @@
 <h2 align="left">Log Update</h3>
 <p align="left">
   <h5>2/8/2024</h5>
-  <br>
-  <a>Start Projact</a>
+  <a> - Start Projact</a>
   <br>
     <a> - Login From </a>
   <br>
