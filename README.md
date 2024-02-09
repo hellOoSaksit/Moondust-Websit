@@ -12,9 +12,9 @@
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
 <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
-<h3 align="left">Log Update</h3>
+<h2 align="left">Log Update</h3>
 <p align="left">
-  <h1>2/8/2024</h1>
+  <h5>2/8/2024</h5>
   <br>
   <a>Start Projact</a>
   <br>
@@ -24,7 +24,7 @@
   <br>
     <a> - Footer </a>
   <br>
-  <h1>2/9/2024</h1>
-    <a> - Conn Mongodb </a>
-    <a> - Build API </a>
+  <h5>2/9/2024</h5>
+    <a> - Conn Mongodb </a><br>
+    <a> - Build API </a><br>
 </p>
