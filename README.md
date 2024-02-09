@@ -15,10 +15,12 @@
 <h3 align="left">Log Update</h3>
 <p align="left">
   2/8/2024
-  Start Projact
-    - Login From
-    - NavBar
-    - Footer
+  <a>Start Projact</a>
+    <a> - Login From </a>
+    <a> - NavBar </a>
+    <a> - Footer </a>
+    
+    
   2/9/2024
     - Conn Mongodb
     - Build API
