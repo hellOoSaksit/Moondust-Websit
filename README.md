@@ -1,11 +1,12 @@
 ﻿# Moondust-Websit
 <h1 align="center">Project Moondust</h1>
 <h3 align="center">เว็บไซต์สำหรับการจัดการผู้ใช้งาน</h3></p>
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+<tr>
+  <th>Accolade</th>
+  <th>Name</th>
+  <th>Death
+  </th>
+</tr>
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
