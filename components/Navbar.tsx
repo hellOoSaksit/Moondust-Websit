@@ -1,21 +1,23 @@
 import Link from "next/link"
 import Image from "next/image"
+import Sidebar from './Sidebar';
+
 export default function Navbar(){
     return(
 <div className="bg-gray-100 font-sans w-full  m-0">
 	<div className="bg-white shadow">
     <div className="container mx-auto px-4">
       <div className="flex items-center justify-between py-4">
-        <div>\
-        <a href="/">
-        <Image
-            priority
-            src="/img/Logo.svg"
-            height={60}
-            width={60}
-            alt="Moondust Cafe"
-        />
-        </a>
+        <div>\ 
+          <a href="/">
+          <Image
+              priority
+              src="/img/Logo.svg"
+              height={100}
+              width={100}
+              alt="Moondust Cafe"
+          />
+          </a>
         </div>
 
         <div className="hidden sm:flex sm:items-center">

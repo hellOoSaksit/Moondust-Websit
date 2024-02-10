@@ -4,7 +4,7 @@
 
 | id | name | description | status ❌⭕️ |
 |----|------|-------|----------|
-| 1  | ระบบ Login | - | ❌ |
+| 1  | CRUD | - | ❌ |
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
