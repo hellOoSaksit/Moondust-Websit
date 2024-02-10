@@ -13,8 +13,12 @@
     "@mui/material": "^5.15.9",
     "@mui/x-date-pickers": "^6.19.4",
     "@nextui-org/react": "^2.2.9",
+    "@rewind-ui/core": "^0.19.8",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
     "@tanstack/react-query": "^5.18.1",
     "bootstrap": "^5.3.2",
+    "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.323.0",
     "material-react-table": "^2.11.2",
     "mongodb": "^4.8.1",
@@ -24,7 +28,9 @@
     "react-icons": "^5.0.1",
     "react-query": "^3.39.3",
     "reactstrap": "^9.2.2",
-    "swr": "^2.2.4"
+    "swr": "^2.2.4",
+    "tailwind-merge": "^2.2.1",
+    "tailwind-scrollbar": "^3.0.5"
   },
   "devDependencies": {
     "@types/node": "18.7.5",

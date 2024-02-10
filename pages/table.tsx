@@ -5,7 +5,6 @@ import { Button, Box, IconButton } from '@mui/material';
 import { Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
 import { MaterialReactTable, useMaterialReactTable, type MRT_ColumnDef } from 'material-react-table';
 // import ModalPopup  from '../components/ModalPopupEdit';
-import ModalPopup  from './posts/[id]';
 type Props = {
   posts : [Post]
 }
@@ -97,7 +96,7 @@ const Table: React.FC<Props> = (props: Props) => {
   return (
     <>
       <MaterialReactTable table={table} />
-      <ModalPopup isOpen={modalOpen} onClose={toggleModal} />
+    
     </>
   );
 };
