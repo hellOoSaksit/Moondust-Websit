@@ -4,7 +4,11 @@
 
 | id | name | description | status ❌⭕️ |
 |----|------|-------|----------|
-| 1  | CRUD | - | ❌ |
+| 1  | CRUD | - | ⭕️ |
+| 2  | Login | - | ⭕️ |
+| 2  | Mongodb | - | ⭕️ |
+| 3  | Role | - | ⭕️ |
+| 3  | Routing | - | ❌ |
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
@@ -29,4 +33,6 @@
   <h5>2/9/2024</h5>
     <a> - Conn Mongodb </a><br>
     <a> - Build API </a><br>
+  <h5>2/12/2024</h5>
+    <a> - Routing กำลังทำ </a><br>
 </p>
