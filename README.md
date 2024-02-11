@@ -2,13 +2,20 @@
 <h1 align="center">Project Moondust</h1>
 <h3 align="center">เว็บไซต์สำหรับการจัดการผู้ใช้งาน</h3></p>
 
-| id | name | description | status ❌⭕️ |
+| id | name | description | status ❌⭕️ |            
 |----|------|-------|----------|
 | 1  | CRUD | - | ⭕️ |
 | 2  | Login | - | ⭕️ |
 | 2  | Mongodb | - | ⭕️ |
 | 3  | Role | - | ⭕️ |
 | 3  | Routing | - | ❌ |
+<br><br>
+<h2>สิ่งที่อยากทำในอนาคต</h2>
+| id | name | description | status ❌⭕️ |
+|----|------|-------|----------|
+| 1  | Chart  | - | ❌ |
+| 2  | IOT - Control | - | ❌ |
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
