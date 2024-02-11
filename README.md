@@ -20,8 +20,7 @@
 
 <br><br>
 
-``git clone https://github.com/hellOoSaksit/Moondust-Websit.git``<br>
-  ``npm i ``
+```git clone https://github.com/hellOoSaksit/Moondust-Websit.git```
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
