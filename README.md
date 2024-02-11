@@ -24,9 +24,8 @@
 
 
 ```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+git clone https://github.com/hellOoSaksit/Moondust-Websit.git
+npm i
 ```
 
 <h3 align="left">Languages and Tools:</h3>
