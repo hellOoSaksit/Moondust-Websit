@@ -25,6 +25,7 @@
 
 ```ruby
 git clone https://github.com/hellOoSaksit/Moondust-Websit.git
+-------------------------------------------------------------
 npm i
 ```
 
