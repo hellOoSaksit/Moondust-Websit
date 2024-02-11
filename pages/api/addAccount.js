@@ -5,11 +5,20 @@ export default async (req, res) => {
 
         const client = await clientPromise;
         const db = client.db("Moondust");
-        const { title, content } = req.body;
+        const { 
+            email,
+            password,
+            role,
+            username,
+            name
+        } = req.body;
 
-        const post = await db.collection("Posts").insertOne({
-            title,
-            content
+        const post = await db.collection("User").insertOne({
+            email,
+            password,
+            role,
+            username,
+            name
         })
 
         res.json(post);

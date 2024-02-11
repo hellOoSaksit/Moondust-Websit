@@ -1,17 +1,31 @@
 import { Sidebar, useSidebar, Overlay } from '@rewind-ui/core';
-import { Book, Briefcase, Key, Shield, Sliders, Users, View } from "lucide-react";
-import { useState } from "react";
-import { RocketLaunch } from "@mui/icons-material";
+import { useState, useEffect } from "react";
 import { Button } from "reactstrap";
-import Image from "next/image"
+import { useCookies } from 'react-cookie';
+import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 export default function Layout({ children }) {
   const [expanded, setExpanded] = useState(true);
   const [mobile, setMobile] = useState(false);
+  const [cookies] = useCookies(['username', 'role']);
   const sidebar = useSidebar();
+
+  useEffect(() => {
+    // เพิ่มการตรวจสอบสถานะการเข้าสู่ระบบทุกครั้งที่ expanded หรือ mobile เปลี่ยน
+    if (expanded || mobile) {
+      const isAuthenticated = cookies.username && cookies.role;
+      if (!isAuthenticated) {
+        // ถ้ายังไม่ได้เข้าสู่ระบบ ให้ redirect ไปที่หน้า Login
+        window.location.href = "/";
+      }
+    }
+  }, [expanded, mobile, cookies.username, cookies.role]);
+
   return (
-    <div className="relative flex flex-row w-full h-full min-h-screen ">
-      <Sidebar color="gray"
+
+<div className="relative flex flex-row w-full h-full min-h-screen">
+      <Sidebar
+        color="gray"
         onToggle={(state: SidebarState) => {
           setExpanded(state.expanded);
           setMobile(state.mobile);
@@ -25,23 +39,26 @@ export default function Layout({ children }) {
 
         <Sidebar.Nav>
           <Sidebar.Nav.Section>
-            <Sidebar.Nav.Section.Item icon={<RocketLaunch />} label="Dashboard" href="#" active />
+            <Sidebar.Nav.Section.Item  label="Login" href="/" active />
+            {/* <Sidebar.Nav.Section.Item icon={<RocketLaunch />} label="Login" href="/" active /> */}
           </Sidebar.Nav.Section>
 
           <Sidebar.Nav.Section>
             <Sidebar.Nav.Section.Title>Management</Sidebar.Nav.Section.Title>
-            <Sidebar.Nav.Section.Item icon={<Briefcase />} label="Clients" href="#" />
-            <Sidebar.Nav.Section.Item icon={<Users />} label="Users" as="button">
+            <Sidebar.Nav.Section.Item  label="Clients" href="#" />
+            <Sidebar.Nav.Section.Item  label="Users" as="button">
+            {/* <Sidebar.Nav.Section.Item icon={<Briefcase />} label="Clients" href="#" />
+            <Sidebar.Nav.Section.Item icon={<Users />} label="Users" as="button"> */}
               <Sidebar.Nav.Section isChild>
                 <Sidebar.Nav.Section.Item
-                  icon={<span className="w-1 h-1 rounded bg-transparent" />}
-                  label="List all"
-                  href="/table"
+                  // icon={<span className="w-1 h-1 rounded bg-transparent" />}
+                  label="Account"
+                  href="/tableAccount"
                 />
                 <Sidebar.Nav.Section.Item
-                  icon={<span className="w-1 h-1 rounded bg-transparent" />}
+                  // icon={<span className="w-1 h-1 rounded bg-transparent" />}
                   label="Add new"
-                  href="/posts"
+                  href="/postsAccount/postsAccount"
                 />
               </Sidebar.Nav.Section>
             </Sidebar.Nav.Section.Item>
@@ -74,14 +91,21 @@ export default function Layout({ children }) {
           />
         )}
         <header className="flex flex-row sticky top-0 px-8 items-center bg-white border-b border-b-gray-100 w-full shadow-sm min-h-[4rem]">
-          <Image src="/img/Logo.svg" width={100} height={100} alt="Rewind-UI" class="your-class-name" />
+          {/* <Image src="/img/Logo.svg" width={100} height={100} alt="Rewind-UI" className="your-class-name" /> */}
+          <img
+            className=""
+            src="img/Logo.svg"
+            alt="Moondust"
+            width={100}
+            height={100}
+          />
           <Button
             onClick={() => {
               sidebar.toggleMobile();
             }}
             size="sm"
             color="white"
-            icon
+            // icon
             className="ml-auto flex md:hidden"
           >
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -94,9 +118,10 @@ export default function Layout({ children }) {
           </Button>
         </header>
 
-        <div className="w-full h-full p-8">
-        { children }
-        </div>
+
+            {children}
+
+
 
         <div className="flex sticky bottom-0 items-center bg-white w-full min-h-[4rem] px-8">
           <span>Footer</span>

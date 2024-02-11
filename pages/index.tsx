@@ -1,37 +1,138 @@
-import { Button , Modal ,Input } from '@rewind-ui/core';
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
+import { useRouter } from 'next/router';
+import { sign } from 'jsonwebtoken';
 
-export default function Home() 
-{
-  const [open, setOpen] = useState(false);
+
+const Login: React.FC = () => {
+  const router = useRouter();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    console.log(username);
+    console.log(password);
+    // ส่งข้อมูลล็อกอินไปยัง API route
+    try {
+    
+      let response = await fetch("http://localhost:3000/api/login", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ username })  // Include the username in the request body
+      });
+    
+      const data = await response.json();
+    
+      if (response.ok) {
+        if (data && data.username) {
+          // console.log('Login successful');
+          // console.log('Username:', data.username);
+          // console.log('Role:', data.role);
+
+          setCookie('username', data.username, 1); 
+          setCookie('role',data.role, 1);
+          router.push('/tableAccount');
+        } else {
+          console.error('Invalid response format. Missing username.');
+        }
+      } else {
+        console.error('Login failed:', data ? data.message : 'Unknown error');
+      }
+    } catch (error) {
+      console.error("An error occurred while logging in", error);
+    }
+    
+  };
+  
+  function setCookie(name: string, value: string, days: number) {
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + days);
+  
+    const cookie = `${name}=${encodeURIComponent(value)}; expires=${expirationDate.toUTCString()}; path=/`;
+    document.cookie = cookie;
+  }
+
+  // Add a return statement to return JSX
   return (
-    <>
+    <div className="flex justify-center items-center">
+    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
+    <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <img
+        className="mx-auto  w-auto"
+        src="img/Logo.svg"
+        alt="Moondust"
+        width={200}
+      />
+     
       
-      <Modal size="md" open={open} onClose={() => setOpen(false)}>
-            <div className='flex flex-col border bg-white rounded-md shadow-sm divide-y divide-gray-100 border-gray-100 w-full'>
-              <div className='flex-row items-center p-5 text-base rounded-t-md flex justify-between'>
-                <div className='flex flex-col'>
-                    <h3 className='text-xl text-gray-800 font-bold'>Add User</h3>
-                    <span className='text-gray-500'>เพิ่มชื่อผู้ใช้</span>
-                </div>
-                <div>
-                <button type='button' className='inline-flex items-center justify-center enabled:cursor-pointer focus:outline-none transition duration-150 ease-in-out data-[has-left-element=true]:rounded-l-none data-[has-right-element=true]:rounded-r-none data-[has-left-element=true]:h-auto data-[has-right-element=true]:h-auto focus:z-20 border antialiased focus:ring-gray-100 text-sm rounded-lg shadow-none focus:ring focus:ring-offset-1 w-8 h-8 text-gray-800 border-gray-100 bg-white focus:bg-gray-50 hover:bg-gray-50 active:bg-gray-100 disabled:bg-gray-50/50 disabled:hover:bg-gray-50'
-                aria-disabled="false"
-                >
-                <svg xmlns='http://www.w3.org/2000/svg' width = '1em' height='1em' fill ='currentColor'
-                viewBox='0 0 256 256'>
-                  <path d = "M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
-                  </path>
-                </svg>
-                </button>
-                </div>
-              </div>
-                <div className='box-border  p-4 border-4'>
-                <Input type="text" tone='light' size='md' radius='lg' placeholder='ชื่อผู้ใช้' ></Input>
-                </div>
+      <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+        เข้าสู่ระบบด้วย ไอดี
+      </h2>
+    </div>
+    <a><h2 id = 'ErrorUsersname'></h2></a>
+    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form className="space-y-6" action="#" method="POST">
+        <div>
+          <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
+            ชื่อผู้ใช้
+          </label>
+          <div className="mt-2">
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autoComplete="username"
+              value={username} onChange={(e: ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)}
+              required
+              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between">
+            <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+              รหัสผ่าน
+            </label>
+            <div className="text-sm">
             </div>
-      </Modal>
-      <Button onClick={() => setOpen(true)}>Click me!</Button>
-    </>
+          </div>
+          <div className="mt-2">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autoComplete="current-password"
+              required
+              value = {password}
+              onChange = {(e: ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            onClick={handleSubmit}
+            >
+            เข้าสู่ระบบ
+          </button>
+        </div>
+      </form>
+
+      <a className="text-red-600" >
+        เว็บไซต์เป็นการใช้รหัสภายในโปรติดต่อคนดูแล
+      </a>
+    </div>
+  </div>
+  </div>
+  
   );
-}
+};
+
+export default Login;

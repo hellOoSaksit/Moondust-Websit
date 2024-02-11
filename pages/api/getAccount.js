@@ -1,15 +1,15 @@
 import clientPromise from "../../lib/mongodb";
 
-export default async (req,res) => {
+export default async (req, res) => {
     try {
         const client = await clientPromise;
         const db = client.db("Moondust");
 
-        const posts = await db.collection("Posts").find({}).limit(20).toArray();
+        const posts = await db.collection("User").find({}).toArray();
 
         res.json(posts);
     } catch (error) {
-        console.erro(error);
+        console.error(error);
         throw new Error(error).message;
     }
 }
