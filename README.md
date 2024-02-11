@@ -29,9 +29,12 @@ git clone https://github.com/hellOoSaksit/Moondust-Websit.git
 npm i
 
 แก้ไฟล์ : .env.local เป็น ของตัวเองด้วยนะ
-ตัวอย่างการสร้าง
-![Screenshot 2024-02-12 031453](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/d209ed4e-20e5-4473-a09e-69846655685c)
+
 ```
+
+<h3>ตัวอย่างการสร้าง</h3>
+![Screenshot 2024-02-12 031453](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/d209ed4e-20e5-4473-a09e-69846655685c)
+
 <h3>AddAccount</h3>
 
 https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/53e09404-12b0-4530-9606-944c67591713
