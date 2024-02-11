@@ -27,6 +27,8 @@
 git clone https://github.com/hellOoSaksit/Moondust-Websit.git
 -------------------------------------------------------------
 npm i
+
+แก้ไฟล์ : .env.local เป็น ของตัวเองด้วยนะ
 ```
 <h3>AddAccount</h3>
 
