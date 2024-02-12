@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-    <img alt="MARKDOWN SYNTAX" src="https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/f806c19a-13f3-40f7-8222-e8fe07c94718" width="350" height="70"></img>
+    <img alt="MARKDOWN SYNTAX" src="https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/f806c19a-13f3-40f7-8222-e8fe07c94718" width="600" height="600"></img>
 </h1>
 
 | <a href="#header">HEADER</a> 
