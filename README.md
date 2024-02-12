@@ -74,20 +74,3 @@ https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/382457b9-40ad-45
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
 <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
-<h2 align="left">Log Update</h3>
-<p align="left">
-  <h5>2/8/2024</h5>
-  <a> - Start Projact</a>
-  <br>
-    <a> - Login From </a>
-  <br>
-    <a> - NavBar </a>
-  <br>
-    <a> - Footer </a>
-  <br>
-  <h5>2/9/2024</h5>
-    <a> - Conn Mongodb </a><br>
-    <a> - Build API </a><br>
-  <h5>2/12/2024</h5>
-    <a> - Routing กำลังทำ </a><br>
-</p>
