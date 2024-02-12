@@ -15,7 +15,8 @@
 | 2  | Login | - | ⭕️ |
 | 3  | Mongodb | - | ⭕️ |
 | 4  | Role | - | ⭕️ |
-| 5  | Routing | - | ❌ |
+| 5  | Routing | - | ⭕️ |
+| 6  | GithubLogin | - | ⭕️ |
 <br><br>
 <h2>สิ่งที่อยากทำในอนาคต</h2>
 
