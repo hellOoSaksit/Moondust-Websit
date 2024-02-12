@@ -1,22 +1,9 @@
 <div align="center">
 <h1>
-    <img alt="MARKDOWN SYNTAX" src="https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/f806c19a-13f3-40f7-8222-e8fe07c94718" width="600" height="600"></img>
+    <img alt="MARKDOWN SYNTAX" src="https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/f806c19a-13f3-40f7-8222-e8fe07c94718" width="300" height="300"></img>
 </h1>
 
-| <a href="#header">HEADER</a> 
-| <a href="#emphasis">EMPHASIS</a> 
-| <a href="#horizontal-line">HORIZONTAL_LINE</a> 
-| <a href="#list">LIST</a> 
-| <a href="#table">TABLE</a> 
-| <a href="#link">LINK</a> 
-| <a href="#image">IMAGE</a> 
-| <a href="#quote">QUOTE</a> | <br/>
-| <a href="#comment">COMMENT</a> 
-| <a href="#code">CODE</a> 
-| <a href="#github-emoji">GITHUB_EMOJI</a> 
-| <a href="#others">OTHERS</a> 
-| <a href="#html-tags">HTML_TAGS</a> 
-| <a href="#text-art">TEXT_ART</a> |
+
 </div>
 
 <h1 align="center">Project Moondust</h1>
