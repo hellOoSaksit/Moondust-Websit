@@ -7,7 +7,7 @@
 </div>
 
 <h1 align="center">Project Moondust</h1>
-<h3 align="center">เว็บไซต์สำหรับการจัดการผู้ใช้งาน</h3></p>
+<h3 align="center">อยากทำไปเรื่อยๆ</h3></p>
 
 | id | name | description | status ❌⭕️ |            
 |----|------|-------|----------|
