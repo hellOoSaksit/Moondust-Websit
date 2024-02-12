@@ -1,7 +1,7 @@
-![Logo](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/83075945-3c33-4c0f-a0e7-28f6b9ebbb6c)
+<p align="center">![Logo](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/83075945-3c33-4c0f-a0e7-28f6b9ebbb6c)</p>
 
 
-# Moondust-Websit
+<p align="center"># Moondust-Websit</p>
 
 
 <h1 align="center">Project Moondust</h1>
