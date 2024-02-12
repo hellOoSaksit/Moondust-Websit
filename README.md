@@ -1,40 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+<h1>
+    <img alt="MARKDOWN SYNTAX" src="https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/f806c19a-13f3-40f7-8222-e8fe07c94718"></img>
+</h1>
 
-## Getting Started
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<h1 align="center">Project Moondust</h1>
+<h3 align="center">เว็บไซต์สำหรับการจัดการผู้ใช้งาน</h3></p>
+
+| id | name | description | status ❌⭕️ |            
+|----|------|-------|----------|
+| 1  | CRUD | - | ⭕️ |
+| 2  | Login | - | ⭕️ |
+| 3  | Mongodb | - | ⭕️ |
+| 4  | Role | - | ⭕️ |
+| 5  | Routing | - | ❌ |
+<br><br>
+<h2>สิ่งที่อยากทำในอนาคต</h2>
+
+
+| id | name | description | status ❌⭕️ |
+|----|------|-------|----------|
+| 1  | Chart  | - | ❌ |
+| 2  | IOT - Control | - | ❌ |
+
+<br><br>
+<h1>วิธีติดตั้ง</h1>
+
+
+
+```ruby
+git clone https://github.com/hellOoSaksit/Moondust-Websit.git
+-------------------------------------------------------------
+npm i
+
+แก้ไฟล์ : .env.local เป็น ของตัวเองด้วยนะ
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>ตัวอย่างการสร้าง</h3>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Screenshot 2024-02-12 031453](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/e60ed54c-2394-4da9-ab21-db9cdffd0ee0)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<h3>AddAccount</h3>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/53e09404-12b0-4530-9606-944c67591713
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h3>DeleAccount</h3>
 
-## Learn More
+https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/2a7e143d-2531-430e-8083-30afadb760b1
 
-To learn more about Next.js, take a look at the following resources:
+<h3>LoginAccount</h3>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/6ac84976-5d5f-4ae9-9c3d-e674836a7851
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<h3>EditAccount</h3>
 
-## Deploy on Vercel
+https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/e2d291a1-f539-45b2-acc0-1b731547d009
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h3>Animation</h3>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/382457b9-40ad-4525-91aa-a5da0f55ff45
+
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> 
+<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
+<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+
+<h2 align="left">Log Update</h3>
+<p align="left">
+  <h5>2/8/2024</h5>
+  <a> - Start Projact</a>
+  <br>
+    <a> - Login From </a>
+  <br>
+    <a> - NavBar </a>
+  <br>
+    <a> - Footer </a>
+  <br>
+  <h5>2/9/2024</h5>
+    <a> - Conn Mongodb </a><br>
+    <a> - Build API </a><br>
+  <h5>2/12/2024</h5>
+    <a> - Routing กำลังทำ </a><br>
+</p>
