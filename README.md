@@ -1,13 +1,8 @@
 <p align="center">
-  
-  ![Logo](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/83075945-3c33-4c0f-a0e7-28f6b9ebbb6c)
-  
-  
-</p>
-
-
-<p align="center"># Moondust-Websit</p>
-
+<h1>
+    ![Logo](https://github.com/hellOoSaksit/Moondust-Websit/assets/79570387/83075945-3c33-4c0f-a0e7-28f6b9ebbb6c)
+</h1>
+<div align="center">
 
 <h1 align="center">Project Moondust</h1>
 <h3 align="center">เว็บไซต์สำหรับการจัดการผู้ใช้งาน</h3></p>
